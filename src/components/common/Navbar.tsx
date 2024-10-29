@@ -6,7 +6,7 @@ function Navbar() {
     return ( 
         <nav className={styles.navbar}>
             <div className={styles.navbar_title}>
-                <h4>Living Life Tech</h4>
+                <h4>Living Life</h4>
                 <ul>
                     <li>Recursos</li>
                     <li>Personal</li>

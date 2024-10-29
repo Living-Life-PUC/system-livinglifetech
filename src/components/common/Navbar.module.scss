@@ -5,6 +5,7 @@
   padding-left: 3rem;
   padding-right: 3rem;
   @include flex-center;
+  height: 4rem;
 
   .navbar_title {
     @include flex-center;
