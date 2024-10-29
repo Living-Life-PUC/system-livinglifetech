@@ -1,0 +1,29 @@
+@import "../../assets/mixins";
+@import "../../assets/variables";
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    article {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-weight: 100;
+        color: $primary_lime;
+        text-transform: uppercase;
+        font-size: 1.125rem;
+    }
+
+    h1 {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 1.625rem;
+    }
+}
