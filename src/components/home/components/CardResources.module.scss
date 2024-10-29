@@ -1,0 +1,40 @@
+@import "../../../assets/mixins";
+@import "../../../assets/variables";
+
+.card {
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  figure {
+    @include flex-center;
+  }
+
+  h1 {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  p {
+    color: $secondary_text-color;
+  }
+}
+
+.card--performance {
+  figure {
+    @include card-figure($secondary_lime, $primary_lime);
+  }
+}
+
+.card--trainer {
+  figure {
+    @include card-figure($secondary_orange, $primary_orange);
+  }
+}
+
+.card--comunity {
+  figure {
+    @include card-figure($secondary_green, $primary_green);
+  }
+}

@@ -1,13 +1,26 @@
-function CardResources() {
-  return (
-    <article>
-      <div></div>
+// Icone
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-      <h1>Titulo</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa facilis, tenetur
-        voluptatem assumenda.
-      </p>
+// Estilização
+import styles from "./CardResources.module.scss";
+
+// Tipos
+interface CardResourcesTypes {
+  icon: any;
+  title: string;
+  description: string;
+  style: string;
+}
+
+function CardResources({ icon, title, description, style }: CardResourcesTypes) {
+  return (
+    <article className={`${styles.card} ${styles[style]}`}>
+      <figure>
+        <FontAwesomeIcon icon={icon} />
+      </figure>
+
+      <h1>{title}</h1>
+      <p>{description}</p>
     </article>
   );
 }
