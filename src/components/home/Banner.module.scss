@@ -1,0 +1,28 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.banner {
+  background-image: url(/public/banner_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 416px;
+  margin-top: -4rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-left: 8rem;
+  padding-right: 8rem;
+
+  h1 {
+    margin: 0rem;
+    color: #fff;
+    font-size: 3.875rem;
+    text-transform: uppercase;
+    font-weight: 800;
+
+
+    span {
+        color: $primary_lime;
+    }
+  }
+}
