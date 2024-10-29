@@ -1,7 +1,16 @@
+import Navbar from "./components/common/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <p>Texto</p>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" Component={Home} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
