@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+@import './assets/variables';
+@import './assets/mixins';
+
+html,
+body {
+  font-family: "Sora", sans-serif;
+  color: $text-color;
+}
