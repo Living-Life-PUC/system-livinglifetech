@@ -1,22 +1,29 @@
 // Importações
-import styles from './Navbar.module.scss';
+import styles from "./Navbar.module.scss";
 import Button from "./Button";
 
 function Navbar() {
-    return ( 
-        <nav className={styles.navbar}>
-            <div className={styles.navbar_title}>
-                <h4>Living Life</h4>
-                <ul>
-                    <li>Recursos</li>
-                    <li>Personal</li>
-                    <li>Comunidade</li>
-                </ul>
-            </div>
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
-            <Button text="Cadastrar"/>
-        </nav>
-     );
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.navbar_title}>
+        <h4>Living Life</h4>
+        <ul>
+          <li onClick={() => handleScroll("resources")}>Recursos</li>
+          <li onClick={() => handleScroll("trainer")}>Personal</li>
+          <li onClick={() => handleScroll("community")}>Comunidade</li>
+        </ul>
+      </div>
+
+      <Button text="Cadastrar" />
+    </nav>
+  );
 }
 
 export default Navbar;
