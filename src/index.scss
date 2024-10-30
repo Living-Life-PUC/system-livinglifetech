@@ -1,36 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&display=swap");
-@import "./assets/variables";
 @import "./assets/mixins";
+@import "./assets/variables";
 
 html,
 body {
   font-family: "Sora", sans-serif;
-  color: $text-color;
+  color: #252525;
   margin: 0rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0rem;
 }
-
 .container {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 960px;
+  @media (min-width: 480px) {
+    max-width: 480px;
   }
-}
 
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 976px) {
+    max-width: 976px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1440px;
   }
 }

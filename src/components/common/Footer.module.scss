@@ -1,0 +1,51 @@
+@import "../../assets/mixins";
+@import "../../assets/variables";
+
+.footer_bg {
+  background-color: #252525;
+  padding: 4rem 0rem 0.5rem 0rem;
+}
+
+.footer {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+
+  h1 {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0rem;
+    gap: 1rem;
+    font-size: 1rem;
+
+    li {
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+.copyrigth {
+  text-align: center;
+  font-size: 0.75rem;
+
+  span {
+    font-weight: 800;
+  }
+}

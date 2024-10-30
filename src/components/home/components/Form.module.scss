@@ -1,0 +1,25 @@
+@import "../../../assets/mixins";
+@import "../../../assets/variables";
+
+.form {
+  background-color: $primary_lime;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+    margin-top: 2rem;
+  background-color: white;
+  color: #bfd200; /* mesma cor de fundo do formulário para o texto */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
