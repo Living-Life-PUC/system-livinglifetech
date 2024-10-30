@@ -14,9 +14,10 @@
 
 .footer_info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: 2rem 0rem;
+  gap: 2rem;
 
   h1 {
     font-size: 1.125rem;
@@ -38,6 +39,11 @@
         font-weight: 100;
       }
     }
+  }
+
+  @media (min-width: 768px) {
+    gap: 0rem;
+    flex-direction: row;
   }
 }
 

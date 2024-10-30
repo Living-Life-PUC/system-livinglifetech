@@ -19,10 +19,24 @@
     font-size: 3.875rem;
     text-transform: uppercase;
     font-weight: 800;
-
+    width: 36rem;
 
     span {
-        color: $primary_lime;
+      color: $primary_lime;
     }
+
+    @media (max-width: 975px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 975px) {
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;
   }
 }
